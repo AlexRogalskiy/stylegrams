@@ -44,6 +44,10 @@ jobs:
         run: |
           pnpm run test:all --if-present
 
+      - name: Run checks
+        run: |
+          pnpm run check:all --if-present
+
       - name: Circular dependency check
         uses: gerrit0/circular-dependency-check@v1
         with:

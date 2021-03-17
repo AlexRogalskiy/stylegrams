@@ -798,6 +798,9 @@ var run = /*#__PURE__*/function () {
       while (1) {
         switch (_context.prev = _context.next) {
           case 0:
+            console.log('Hello, world!');
+
+          case 1:
           case "end":
             return _context.stop();
         }

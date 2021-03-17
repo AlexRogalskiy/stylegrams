@@ -17,10 +17,10 @@ module.exports = {
 
     collectCoverage: true,
     collectCoverageFrom: [
-        '**/*.ts',
+        '**/*.{js,ts}',
         '!**/*.d.ts',
-        '!**/*.folio.ts',
-        '!**/*.spec.ts',
+        '!**/*.folio.{js,ts}',
+        '!**/*.spec.{js,ts}',
         '!**/dist/**',
         '!**/node_modules/**',
         '!**/vendor/**',

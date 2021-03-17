@@ -3,45 +3,44 @@
 [![management: perfekt👌](https://img.shields.io/badge/management-perfekt👌-red.svg)](https://github.com/lekterable/perfekt)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/AlexRogalskiy/proverbs)
-![GitHub Release Date](https://img.shields.io/github/release-date/AlexRogalskiy/proverbs)
-![Lines of code](https://tokei.rs/b1/github/AlexRogalskiy/proverbs?category=lines)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/AlexRogalskiy/proverbs)
-![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/AlexRogalskiy/proverbs)
-![GitHub repo size](https://img.shields.io/github/repo-size/AlexRogalskiy/proverbs)
-![GitHub last commit](https://img.shields.io/github/last-commit/AlexRogalskiy/proverbs)
-![GitHub](https://img.shields.io/github/license/AlexRogalskiy/proverbs)
-![GitHub language count](https://img.shields.io/github/languages/count/AlexRogalskiy/proverbs)
-![GitHub search hit counter](https://img.shields.io/github/search/AlexRogalskiy/proverbs/goto)
-![GitHub Repository branches](https://badgen.net/github/branches/AlexRogalskiy/proverbs)
-![GitHub Repository dependents](https://badgen.net/github/dependents-repo/AlexRogalskiy/proverbs)
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/AlexRogalskiy/stylegrams)
+![GitHub Release Date](https://img.shields.io/github/release-date/AlexRogalskiy/stylegrams)
+![Lines of code](https://tokei.rs/b1/github/AlexRogalskiy/stylegrams?category=lines)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/AlexRogalskiy/stylegrams)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/AlexRogalskiy/stylegrams)
+![GitHub repo size](https://img.shields.io/github/repo-size/AlexRogalskiy/stylegrams)
+![GitHub last commit](https://img.shields.io/github/last-commit/AlexRogalskiy/stylegrams)
+![GitHub](https://img.shields.io/github/license/AlexRogalskiy/stylegrams)
+![GitHub language count](https://img.shields.io/github/languages/count/AlexRogalskiy/stylegrams)
+![GitHub search hit counter](https://img.shields.io/github/search/AlexRogalskiy/stylegrams/goto)
+![GitHub Repository branches](https://badgen.net/github/branches/AlexRogalskiy/stylegrams)
+![GitHub Repository dependents](https://badgen.net/github/dependents-repo/AlexRogalskiy/stylegrams)
 
-[![DeepScan grade](https://deepscan.io/api/teams/11946/projects/16316/branches/347252/badge/grade.svg)](https://deepscan.io/dashboard#view=project\&tid=11946\&pid=16316\&bid=347252)
-[![Tokei](https://tokei.rs/b1/github/AlexRogalskiy/proverbs?category=lines)](https://github.com/XAMPPRocky/tokei)
-![Mergify Status](https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/AlexRogalskiy/proverbs)
+[![DeepScan grade](https://deepscan.io/api/teams/11946/projects/16324/branches/347430/badge/grade.svg)](https://deepscan.io/dashboard#view=project\&tid=11946\&pid=16324\&bid=347430)
+[![Tokei](https://tokei.rs/b1/github/AlexRogalskiy/stylegrams?category=lines)](https://github.com/XAMPPRocky/tokei)
+![Mergify Status](https://img.shields.io/endpoint.svg?url=https://gh.mergify.io/badges/AlexRogalskiy/stylegrams)
 [![Reviewed by Hound](https://img.shields.io/badge/Reviewed_by-Hound-8E64B0.svg)](https://houndci.com)
-[![DOI](https://zenodo.org/badge/346359381.svg)](https://zenodo.org/badge/latestdoi/346359381)
-[![dependencies Status](https://status.david-dm.org/gh/AlexRogalskiy/proverbs.svg)](https://david-dm.org/AlexRogalskiy/proverbs)
+[![DOI](https://zenodo.org/badge/348836186.svg)](https://zenodo.org/badge/latestdoi/348836186)
+[![dependencies Status](https://status.david-dm.org/gh/AlexRogalskiy/stylegrams.svg)](https://david-dm.org/AlexRogalskiy/stylegrams)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/alexrogalskiy/proverbs/master/LICENSE?token=AH44ZFH7IF2KSEDK7LSIW3C7YOFYC)
-[![Issue](https://img.shields.io/github/issues/alexrogalskiy/proverbs)](https://img.shields.io/github/issues/alexrogalskiy/proverbs)
-[![Forks](https://img.shields.io/github/forks/alexrogalskiy/proverbs)](https://img.shields.io/github/forks/alexrogalskiy/proverbs)
-[![Stars](https://img.shields.io/github/stars/alexrogalskiy/proverbs)](https://img.shields.io/github/stars/alexrogalskiy/proverbs)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://raw.githubusercontent.com/alexrogalskiy/stylegrams/master/LICENSE?token=AH44ZFH7IF2KSEDK7LSIW3C7YOFYC)
+[![Issue](https://img.shields.io/github/issues/alexrogalskiy/stylegrams)](https://img.shields.io/github/issues/alexrogalskiy/stylegrams)
+[![Forks](https://img.shields.io/github/forks/alexrogalskiy/stylegrams)](https://img.shields.io/github/forks/alexrogalskiy/stylegrams)
+[![Stars](https://img.shields.io/github/stars/alexrogalskiy/stylegrams)](https://img.shields.io/github/stars/alexrogalskiy/stylegrams)
 ![code style](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)
-[![Maintainability](https://api.codeclimate.com/v1/badges/ed7702f8cf28917829fa/maintainability)](https://codeclimate.com/github/AlexRogalskiy/proverbs/maintainability)
-[![Total alerts](https://img.shields.io/lgtm/alerts/g/AlexRogalskiy/proverbs.svg?logo=lgtm\&logoWidth=18)](https://lgtm.com/projects/g/AlexRogalskiy/proverbs/alerts/)
-[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/AlexRogalskiy/proverbs.svg?logo=lgtm\&logoWidth=18)](https://lgtm.com/projects/g/AlexRogalskiy/proverbs/context:javascript)
+[![Maintainability](https://api.codeclimate.com/v1/badges/786e2acd7dc4668eaab3/maintainability)](https://codeclimate.com/github/AlexRogalskiy/stylegrams/maintainability)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/AlexRogalskiy/stylegrams.svg?logo=lgtm\&logoWidth=18)](https://lgtm.com/projects/g/AlexRogalskiy/stylegrams/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/AlexRogalskiy/stylegrams.svg?logo=lgtm\&logoWidth=18)](https://lgtm.com/projects/g/AlexRogalskiy/stylegrams/context:javascript)
 
 [![Renovatebot](https://badgen.net/badge/renovate/enabled/green?cache=300)](https://renovatebot.com/)
 [![Dependabot](https://img.shields.io/badge/dependabot-enabled-1f8ceb.svg?style=flat-square)](https://dependabot.com/)
-[![NewReleases](https://newreleases.io/badge.svg)](https://newreleases.io/github/AlexRogalskiy/proverbs)
-[![Hits-of-Code](https://hitsofcode.com/github/AlexRogalskiy/proverbs)](https://hitsofcode.com/github/AlexRogalskiy/proverbs/view)
+[![NewReleases](https://newreleases.io/badge.svg)](https://newreleases.io/github/AlexRogalskiy/stylegrams)
+[![Hits-of-Code](https://hitsofcode.com/github/AlexRogalskiy/stylegrams)](https://hitsofcode.com/github/AlexRogalskiy/stylegrams/view)
 [![ComVer](https://img.shields.io/badge/ComVer-compliant-brightgreen.svg)][tags]
 
-[![CI](https://github.com/AlexRogalskiy/proverbs/workflows/test/badge.svg)](https://github.com/AlexRogalskiy/proverbs/workflows/test)
+[![CI](https://github.com/AlexRogalskiy/stylegrams/workflows/CI/badge.svg)](https://github.com/AlexRogalskiy/stylegrams/workflows/CI)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
-[![GitHub Super-Linter](https://github.com/AlexRogalskiy/proverbs/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
-[![GitHub JSON-Validator](https://github.com/AlexRogalskiy/proverbs/workflows/Validate%20JSONs/badge.svg)](https://github.com/OrRosenblatt/validate-json-action)
+[![GitHub Super-Linter](https://github.com/AlexRogalskiy/stylegrams/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 
 ## *Table of contents*
 
@@ -136,7 +135,7 @@ See also the list of [contributors][contributors] who participated in this proje
 
 ## *Issues*
 
-[![issuehunt-to-marktext](https://issuehunt.io/static/embed/issuehunt-button-v1.svg)](https://issuehunt.io/r/AlexRogalskiy/proverbs)
+[![issuehunt-to-marktext](https://issuehunt.io/static/embed/issuehunt-button-v1.svg)](https://issuehunt.io/r/AlexRogalskiy/stylegrams)
 
 ## *Development Support*
 
@@ -152,18 +151,18 @@ Like ***StyleGrams*** ? Consider buying me a coffee :)
 [![forthebadge](https://img.shields.io/badge/powered%20by-%20github-7116FB.svg?logo=github\&style=for-the-badge)](https://github.com/)
 [![forthebadge](https://img.shields.io/badge/build%20with-%20%E2%9D%A4-B6FF9B.svg?logo=heart\&style=for-the-badge)](https://forthebadge.com/)
 
-[repo]: https://github.com/AlexRogalskiy/proverbs
+[repo]: https://github.com/AlexRogalskiy/stylegrams
 
-[tags]: https://github.com/AlexRogalskiy/proverbs/tags
+[tags]: https://github.com/AlexRogalskiy/stylegrams/tags
 
-[issues]: https://github.com/AlexRogalskiy/proverbs/issues
+[issues]: https://github.com/AlexRogalskiy/stylegrams/issues
 
-[pulls]: https://github.com/AlexRogalskiy/proverbs/pulls
+[pulls]: https://github.com/AlexRogalskiy/stylegrams/pulls
 
-[wiki]: https://github.com/AlexRogalskiy/proverbs/wiki
+[wiki]: https://github.com/AlexRogalskiy/stylegrams/wiki
 
-[stars]: https://github.com/AlexRogalskiy/proverbs/stargazers
+[stars]: https://github.com/AlexRogalskiy/stylegrams/stargazers
 
-[forkers]: https://github.com/AlexRogalskiy/proverbs/network/members
+[forkers]: https://github.com/AlexRogalskiy/stylegrams/network/members
 
-[contributors]: https://github.com/AlexRogalskiy/proverbs/graphs/contributors
+[contributors]: https://github.com/AlexRogalskiy/stylegrams/graphs/contributors

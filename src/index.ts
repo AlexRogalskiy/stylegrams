@@ -1,3 +1,3 @@
 export const run = async (): Promise<void> => {
-    // empty
+    console.log('Hello, world!')
 }
