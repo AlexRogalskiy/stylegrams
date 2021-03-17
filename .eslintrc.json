@@ -1,0 +1,229 @@
+{
+    "plugins": ["jest", "@typescript-eslint", "spellcheck"],
+    "extends": ["plugin:github/recommended"],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaVersion": 9,
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+    "rules": {
+        "indent": ["error", 4],
+        "linebreak-style": ["error", "unix"],
+        "jsx-quotes": ["error", "prefer-double"],
+        "quotes": [
+            "error",
+            "single",
+            {
+                "avoidEscape": true
+            }
+        ],
+        "comma-dangle": ["error", "only-multiline"],
+        "no-case-declarations": "off",
+        "eqeqeq": "warn",
+        "quote-props": ["warn", "consistent-as-needed"],
+        "no-console": "off",
+        "no-shadow": "off",
+        "no-alert": "error",
+        "no-caller": "error",
+        "no-eval": "error",
+        "no-implied-eval": "error",
+        "no-extend-native": "error",
+        "no-implicit-globals": "error",
+        "no-multi-spaces": "error",
+        "no-debugger": "error",
+        "array-bracket-spacing": "error",
+        "block-spacing": "error",
+        "keyword-spacing": "error",
+        "eslint-comments/no-use": "off",
+        "import/no-namespace": "off",
+        "no-unused-vars": "off",
+        "camelcase": "off",
+        "no-invalid-this": "off",
+        "no-angle-bracket-type-assertion": "off",
+        "spellcheck/spell-checker": [
+            "off",
+            {
+                "lang": "en_GB",
+                "skipWords": [
+                    "lunr",
+                    "val",
+                    "param",
+                    "idx",
+                    "utils",
+                    "namespace",
+                    "eslint",
+                    "latin",
+                    "str",
+                    "len",
+                    "sqrt",
+                    "wildcard",
+                    "concat",
+                    "metadata",
+                    "fn",
+                    "params",
+                    "lexeme",
+                    "lex",
+                    "pos",
+                    "typedef",
+                    "wildcards",
+                    "lexemes",
+                    "fns",
+                    "stemmer",
+                    "attrs",
+                    "tf",
+                    "idf",
+                    "lookups",
+                    "whitelist",
+                    "whitelisted",
+                    "tokenizer",
+                    "whitespace",
+                    "automata",
+                    "i",
+                    "obj",
+                    "anymore",
+                    "lexer",
+                    "var",
+                    "refs",
+                    "serializable",
+                    "tis",
+                    "twas",
+                    "int",
+                    "args",
+                    "unshift",
+                    "plugins",
+                    "upsert",
+                    "upserting",
+                    "readonly",
+                    "baz",
+                    "tokenization",
+                    "lunrjs",
+                    "com",
+                    "olivernn",
+                    "github",
+                    "js",
+                    "cb",
+                    "init"
+                ]
+            }
+        ],
+        "no-constant-condition": [
+            "error",
+            {
+                "checkLoops": false
+            }
+        ],
+        /**
+         * eslint-plugin-node
+         */
+        "node/no-unpublished-require": "off",
+        "node/no-unsupported-features": "off",
+        "node/no-unsupported-features/es-builtins": "off",
+        "node/no-unsupported-features/es-syntax": "off",
+        "node/no-unsupported-features/node-builtins": "off",
+        // Redundant with import/no-extraneous-dependencies
+        "node/no-extraneous-import": "off",
+        "node/no-extraneous-require": "off",
+        // Redundant with import/no-unresolved
+        "node/no-missing-import": "off",
+        "node/no-missing-require": "off",
+        /**
+         * eslint-plugin-import
+         */
+        "import/no-default-export": "error",
+        "import/no-named-export": "off",
+        "import/prefer-default-export": "off",
+        /**
+         * eslint-plugin-jest
+         */
+        "jest/consistent-test-it": [
+            "error",
+            {
+                "fn": "test"
+            }
+        ],
+        "jest/valid-title": "error",
+        "jest/no-test-callback": "error",
+        "jest/prefer-todo": "error",
+        "jest/require-to-throw-message": "off",
+        // Many tests make assertions indirectly in a way the plugin
+        // does not understand.
+        "jest/expect-expect": "off",
+        "dot-location": ["error", "property"],
+        "brace-style": [
+            "error",
+            "1tbs",
+            {
+                "allowSingleLine": true
+            }
+        ],
+        /**
+         * eslint-plugin-typescript
+         */
+        "@typescript-eslint/prefer-namespace-keyword": "error",
+        //"@typescript-eslint/prefer-readonly": "error",
+        "@typescript-eslint/prefer-regexp-exec": "error",
+        //"@typescript-eslint/strict-boolean-expressions": "error",
+        "@typescript-eslint/no-unused-vars": "error",
+        "@typescript-eslint/explicit-member-accessibility": [
+            "error",
+            {
+                "accessibility": "no-public"
+            }
+        ],
+        "@typescript-eslint/no-require-imports": "error",
+        "@typescript-eslint/array-type": "error",
+        "@typescript-eslint/await-thenable": "error",
+        "@typescript-eslint/ban-ts-comment": "error",
+        "@typescript-eslint/consistent-type-assertions": "error",
+        "@typescript-eslint/explicit-function-return-type": [
+            "error",
+            {
+                "allowExpressions": true
+            }
+        ],
+        "@typescript-eslint/func-call-spacing": ["error", "never"],
+        "@typescript-eslint/no-array-constructor": "error",
+        "@typescript-eslint/no-empty-interface": "error",
+        "@typescript-eslint/no-explicit-any": "off",
+        "@typescript-eslint/no-extraneous-class": "error",
+        "@typescript-eslint/no-for-in-array": "error",
+        "@typescript-eslint/no-inferrable-types": "error",
+        "@typescript-eslint/no-misused-new": "error",
+        "@typescript-eslint/no-namespace": "off",
+        "@typescript-eslint/no-non-null-assertion": "warn",
+        "@typescript-eslint/no-unnecessary-qualifier": "error",
+        "@typescript-eslint/no-unnecessary-type-assertion": "error",
+        "@typescript-eslint/no-useless-constructor": "error",
+        "@typescript-eslint/no-var-requires": "error",
+        "@typescript-eslint/prefer-for-of": "warn",
+        "@typescript-eslint/prefer-function-type": "warn",
+        "@typescript-eslint/prefer-includes": "error",
+        "@typescript-eslint/prefer-string-starts-ends-with": "error",
+        "@typescript-eslint/promise-function-async": "error",
+        "@typescript-eslint/require-array-sort-compare": "error",
+        "@typescript-eslint/restrict-plus-operands": "off",
+        "@typescript-eslint/ban-ts-ignore": "off",
+        "@typescript-eslint/unified-signatures": "error",
+        "semi": "off",
+        "@typescript-eslint/semi": ["error", "never"],
+        "@typescript-eslint/type-annotation-spacing": "error",
+        "@typescript-eslint/unbound-method": "off",
+        "@typescript-eslint/member-ordering": "off",
+        "@typescript-eslint/no-use-before-define": "off",
+        "@typescript-eslint/no-floating-promises": "warn",
+        "@typescript-eslint/no-empty-function": "warn",
+        "@typescript-eslint/no-this-alias": "warn",
+        "@typescript-eslint/ban-types": "warn",
+        "@typescript-eslint/quotes": "off"
+    },
+    "env": {
+        "node": true,
+        "es6": true,
+        "jest/globals": true
+    },
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    }
+}

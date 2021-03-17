@@ -1,0 +1,166 @@
+{
+    "name": "stylegrams",
+    "version": "0.0.0-dev",
+    "description": "Generate styled infographics more easily and with no efforts",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "license": "GPL-3.0",
+    "private": true,
+    "scripts": {
+        "format": "prettier --single-quote --write \"**/*.{js,ts,json,yml,yaml}\"",
+        "format:check": "prettier --check \"**/*.{js,ts,json,yml,yaml}\"",
+        "lint:editorconfig": "editorconfig-checker",
+        "start": "npm run build && node dist/index.js",
+        "start:dev": "env-cmd --silent -e dev npm run start",
+        "lint": "eslint --cache --fix --quiet --format codeframe --ext js,ts .",
+        "lint:staged": "lint-staged --no-stash --allow-empty",
+        "lint:report": "tsdx lint src tools --report-file report.json",
+        "pretty": "pretty-quick --staged --pattern '!test/tests/lint/**'",
+        "docs": "typedoc --out docs/ts src --excludeExternals --tsconfig tsconfig.json",
+        "remark": "remark -q -f .",
+        "lint:md": "remark-preset-davidtheclark",
+        "format:md": "remark-preset-davidtheclark --format",
+        "semantic-release": "semantic-release",
+        "commit": "git-cz",
+        "postreinstall": "yarn setup",
+        "setup": "yarn",
+        "yarn:import": "rm -rf ./yarn.lock && yarn import",
+        "prepublishOnly": "npm run check:all && npm run build",
+        "postpublish": "npm run clean",
+        "postinstall": "husky install",
+        "prebuild": "rimraf dist coverage",
+        "build": "tsdx build",
+        "watch": "tsdx watch",
+        "clean": "del-cli --dot=true \"./dist/**/*\"",
+        "reinstall": "del-cli --dot=true ./node_modules ./package-lock.json ./yarn.lock",
+        "version": "git add -A dist",
+        "postversion": "git push && git push --tags",
+        "test:folio": "folio tests/spec/",
+        "test": "env-cmd --silent -e test jest",
+        "test:coverage": "env-cmd --silent -e test jest --collectCoverage",
+        "test:watch": "env-cmd --silent -e test jest --watch",
+        "lint:all": "npm run lint && npm run lint:md",
+        "format:all": "npm run format && npm run format:md",
+        "check:all": "npm run format:check",
+        "test:all": "npm run test && npm run test:folio",
+        "all": "npm run format:all && npm run lint:all && npm run pretty && npm run build"
+    },
+    "dependencies": {
+        "env-cmd": "^10.1.0",
+        "lodash": "^4.17.20"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.10.4",
+        "@babel/preset-typescript": "^7.10.4",
+        "@semantic-release/changelog": "^5.0.1",
+        "@semantic-release/commit-analyzer": "^8.0.1",
+        "@semantic-release/git": "^9.0.0",
+        "@semantic-release/github": "^7.2.0",
+        "@semantic-release/npm": "^7.0.10",
+        "@semantic-release/release-notes-generator": "^9.0.1",
+        "@types/jest": "^26.0.20",
+        "@types/prettier": "^2.1.5",
+        "@typescript-eslint/eslint-plugin": "^4.15.0",
+        "@typescript-eslint/parser": "^4.15.0",
+        "cz-conventional-changelog": "^3.3.0",
+        "del-cli": "^3.0.1",
+        "editorconfig-checker": "3.3.0",
+        "eslint": "^7.19.0",
+        "eslint-config-prettier": "^6.15.0",
+        "eslint-plugin-github": "^4.1.1",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-jest": "^23.20.0",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-spellcheck": "0.0.8",
+        "expect": "^26.6.2",
+        "folio": "^0.3.18",
+        "git-cz": "^4.1.0",
+        "husky": "^5.0.8",
+        "jest": "^26.6.3",
+        "jest-circus": "^26.6.3",
+        "lint-staged": "^10.1.6",
+        "prettier": "^2.1.2",
+        "pretty-quick": "^3.1.0",
+        "remark-cli": "^9.0.0",
+        "remark-lint-code-block-style": "^2.0.1",
+        "remark-lint-ordered-list-marker-value": "^2.0.1",
+        "remark-validate-links": "^10.0.2",
+        "remark-preset-davidtheclark": "^0.12.0",
+        "rimraf": "^3.0.2",
+        "semantic-release": ">=17.2.3",
+        "ts-jest": "^26.4.4",
+        "ts-node": ">=9.0.0",
+        "tsdx": "^0.14.1",
+        "typedoc": "^0.20.28",
+        "typescript": "^4.1.3"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AlexRogalskiy/stylegrams.git"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "engines": {
+        "node": ">=10"
+    },
+    "keywords": [
+        "styled graphics",
+        "infographics",
+        "javascript"
+    ],
+    "maintainers": [
+        {
+            "name": "Alexander Rogalskiy",
+            "email": "hi@nullables.io"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Alexander Rogalskiy",
+            "email": "hi@nullables.io"
+        }
+    ],
+    "release": {
+        "tagFormat": "v${version}",
+        "plugins": [
+            "@semantic-release/release-notes-generator",
+            [
+                "@semantic-release/npm",
+                {
+                    "npmPublish": false,
+                    "tarballDir": "dist",
+                    "allowSameVersion": true
+                }
+            ],
+            [
+                "@semantic-release/github",
+                {
+                    "assets": "dist/*.tgz"
+                }
+            ]
+        ]
+    },
+    "husky": {
+        "hooks": {
+            "pre-push": "npm run check:all",
+            "pre-commit": "npm run lint:staged && npm run all && npm run test:all",
+            "prepare-commit-msg": "git cz --hook --non-interactive --type=feat --subject=\"added new features\" || true"
+        }
+    },
+    "bugs": {
+        "url": "https://github.com/AlexRogalskiy/stylegrams/issues"
+    },
+    "homepage": "https://github.com/AlexRogalskiy/stylegrams",
+    "author": {
+        "name": "Alexander Rogalskiy",
+        "url": "https://github.com/AlexRogalskiy"
+    },
+    "funding": "https://github.com/sponsors/AlexRogalskiy",
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    }
+}

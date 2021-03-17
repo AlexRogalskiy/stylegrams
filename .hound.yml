@@ -1,0 +1,14 @@
+fail_on_violations: true
+
+javascript:
+  enabled: true
+
+typescript:
+  enabled: true
+
+scss:
+  enabled: true
+
+eslint:
+  enabled: true
+  config_file: .eslintrc.json
