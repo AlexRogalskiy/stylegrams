@@ -1,5 +1,12 @@
 import path from 'path'
+import fs from 'fs'
 import { isDirectory, isDirectorySync } from 'path-type'
+
+export const ensureDirExists = (dir: string): void => {
+    if (!fs.existsSync(dir)) {
+        fs.mkdirSync(dir, { recursive: true })
+    }
+}
 
 export const getDirectory = async (filepath: string): Promise<string> => {
     const filePathIsDirectory = await isDirectory(filepath)

@@ -6,9 +6,7 @@ import { Optional } from '../typings/types'
 
 export type Config = any
 
-type LoaderResult = Optional<Config>
-
-export type LoaderSync = (filepath: string, content: string) => LoaderResult
+export type LoaderSync = (filepath: string, content: string) => Optional<Config>
 
 export interface LoadersSync {
     [key: string]: LoaderSync
@@ -16,20 +14,16 @@ export interface LoadersSync {
 
 let importFresh: typeof importFreshType
 const loadJs = (filepath: string): LoaderSync => {
-    if (importFresh === undefined) {
-        // eslint-disable-next-line @typescript-eslint/no-require-imports
-        importFresh = require('import-fresh')
-    }
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    importFresh = importFresh === undefined ? require('import-fresh') : importFresh
 
     return importFresh(filepath)
 }
 
 let parseJson: typeof parseJsonType
 const loadJson = (filepath: string, content: any): LoaderSync => {
-    if (parseJson === undefined) {
-        // eslint-disable-next-line @typescript-eslint/no-require-imports
-        parseJson = require('parse-json')
-    }
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    parseJson = parseJson === undefined ? require('parse-json') : parseJson
 
     try {
         return parseJson(content)
@@ -41,10 +35,8 @@ const loadJson = (filepath: string, content: any): LoaderSync => {
 
 let yaml: typeof yamlType
 const loadYaml = (filepath: string, content: any): LoaderSync => {
-    if (yaml === undefined) {
-        // eslint-disable-next-line @typescript-eslint/no-require-imports
-        yaml = require('yaml')
-    }
+    // eslint-disable-next-line @typescript-eslint/no-require-imports
+    yaml = yaml === undefined ? require('yaml') : yaml
 
     try {
         return yaml.parse(content, { prettyErrors: true })

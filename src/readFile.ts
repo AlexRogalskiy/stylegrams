@@ -1,10 +1,12 @@
 import fs from 'fs'
 
+import { Optional } from '../typings/types'
+
 interface Options {
     throwNotFound?: boolean
 }
 
-async function fsReadFileAsync(pathname: string, encoding: string): Promise<string> {
+export const fsReadFileAsync = async (pathname: string, encoding: string): Promise<string> => {
     return new Promise((resolve, reject): void => {
         fs.readFile(pathname, encoding, (error, contents): void => {
             if (error) {
@@ -17,7 +19,7 @@ async function fsReadFileAsync(pathname: string, encoding: string): Promise<stri
     })
 }
 
-export const readFile = async (filepath: string, options: Options = {}): Promise<string | null> => {
+export const readFile = async (filepath: string, options: Options = {}): Promise<Optional<string>> => {
     const throwNotFound = options.throwNotFound === true
 
     try {
@@ -31,7 +33,7 @@ export const readFile = async (filepath: string, options: Options = {}): Promise
     }
 }
 
-export const readFileSync = (filepath: string, options: Options = {}): string | null => {
+export const readFileSync = (filepath: string, options: Options = {}): Optional<string> => {
     const throwNotFound = options.throwNotFound === true
 
     try {
