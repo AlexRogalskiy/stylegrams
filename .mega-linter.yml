@@ -8,11 +8,18 @@ ENABLE:
   - MARKDOWN
   - TYPESCRIPT
   - JAVASCRIPT
-  - EDITORCONFIG
 DISABLE_LINTERS:
   - JAVASCRIPT_STANDARD
   - TYPESCRIPT_STANDARD
-FILTER_REGEX_EXCLUDE: '(\.automation/test|\.automation/generated|docs/javascripts|docs/overrides|docs/json-schemas|flavors|clj-kondo|TEMPLATES)'
+EXCLUDED_DIRECTORIES:
+  - .github
+  - .dependabot
+  - .husky
+  - .idea
+  - coverage
+  - dist
+  - docker
+FILTER_REGEX_EXCLUDE: '(\.automation/test|\.automation/generated|docs/javascripts|docs/overrides|.all-contributorsrc|.all-membersrc|.all-sponsorsrc|docs/json-schemas|flavors|clj-kondo|TEMPLATES)'
 YAML_YAMLLINT_FILTER_REGEX_EXCLUDE: '(templates/\.mega-linter\.yml)'
 YAML_PRETTIER_FILTER_REGEX_EXCLUDE: '(templates/\.mega-linter\.yml|mkdocs\.yml)'
 YAML_V8R_FILTER_REGEX_EXCLUDE: '(descriptors|templates/\.mega-linter\.yml)'

@@ -38,7 +38,7 @@
 [![Hits-of-Code](https://hitsofcode.com/github/AlexRogalskiy/stylegrams)](https://hitsofcode.com/github/AlexRogalskiy/stylegrams/view)
 [![ComVer](https://img.shields.io/badge/ComVer-compliant-brightgreen.svg)][tags]
 
-[![CI](https://github.com/AlexRogalskiy/stylegrams/workflows/CI/badge.svg)](https://github.com/AlexRogalskiy/stylegrams/workflows/CI)
+[![CI](https://github.com/AlexRogalskiy/stylegrams/workflows/CI/badge.svg)](https://github.com/AlexRogalskiy/stylegrams/actions/workflows/build.yml)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![GitHub Super-Linter](https://github.com/AlexRogalskiy/stylegrams/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 [![Mega-Linter](https://github.com/AlexRogalskiy/stylegrams/workflows/Mega-Linter/badge.svg?branch=master)](https://github.com/AlexRogalskiy/stylegrams/actions?query=workflow%3AMega-Linter+branch%3Amaster)
