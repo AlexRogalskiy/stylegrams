@@ -6,27 +6,31 @@ FROM gitpod/workspace-full:latest
 ARG BUILD_DATE="$(git rev-parse --short HEAD)"
 ARG VCS_REF="$(date -u +\"%Y-%m-%dT%H:%M:%SZ\")"
 ARG VERSION="1.0.0"
+ARG HOME_DIR="/home/gitpod"
 
 LABEL maintainer="Alexander Rogalskiy <hi@nullables.io>"
 LABEL organization="nullables.io"
-LABEL io.nullables.api.playground.image.build-date=$BUILD_DATE
-LABEL io.nullables.api.playground.image.name="StyleGrams"
-LABEL io.nullables.api.playground.image.description="Styled infographics"
-LABEL io.nullables.api.playground.image.url="https://nullables.io/"
-LABEL io.nullables.api.playground.image.vcs-ref=$VCS_REF
-LABEL io.nullables.api.playground.image.vcs-url="https://github.com/AlexRogalskiy/stylegrams"
-LABEL io.nullables.api.playground.image.vendor="Nullables.io"
-LABEL io.nullables.api.playground.image.version=$VERSION
+LABEL io.nullables.stylegrams.build-date=$BUILD_DATE
+LABEL io.nullables.stylegrams.name="StyleGrams"
+LABEL io.nullables.stylegrams.description="Styled infographics"
+LABEL io.nullables.stylegrams.url="https://nullables.io/"
+LABEL io.nullables.stylegrams.vcs-ref=$VCS_REF
+LABEL io.nullables.stylegrams.vcs-url="https://github.com/AlexRogalskiy/stylegrams"
+LABEL io.nullables.stylegrams.vendor="Nullables.io"
+LABEL io.nullables.stylegrams.version=$VERSION
 
 ENV LC_ALL en_US.UTF-8
-ENV LANG ${LC_ALL}
-ENV HOME /home/gitpod
+ENV LANG $LC_ALL
+ENV HOME $HOME_DIR
 
-# Define a constant with the working directory
-ARG USER_HOME_DIR="/root"
+USER root
+RUN sudo echo '%sudo ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
-RUN apt-get update && \
-  apt-get -y install \
+## Disable coredump
+RUN sudo /bin/su -c "echo 'Set disable_coredump false' >> /etc/sudo.conf"
+
+RUN sudo apt-get update && \
+  sudo apt-get -y install \
     libgtkextra-dev \
     libgconf2-dev \
     libnss3 \
@@ -41,12 +45,12 @@ RUN apt-get update && \
     libgtk-3-0 \
     unzip
 
-RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
-RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
+RUN sudo curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
+RUN sudo echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
+RUN sudo curl -sL https://deb.nodesource.com/setup_10.x | bash -
 
-RUN apt-get update && apt-get -y install yarn nodejs
+RUN sudo apt-get update && apt-get -y install yarn nodejs
 
 USER gitpod
 
