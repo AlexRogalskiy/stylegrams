@@ -41,6 +41,8 @@
 [![CI](https://github.com/AlexRogalskiy/stylegrams/workflows/CI/badge.svg)](https://github.com/AlexRogalskiy/stylegrams/workflows/CI)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![GitHub Super-Linter](https://github.com/AlexRogalskiy/stylegrams/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
+[![Mega-Linter](https://github.com/AlexRogalskiy/stylegrams/workflows/Mega-Linter/badge.svg?branch=master)](https://github.com/AlexRogalskiy/stylegrams/actions?query=workflow%3AMega-Linter+branch%3Amaster)
+[![BCH compliance](https://bettercodehub.com/edge/badge/AlexRogalskiy/stylegrams?branch=master)](https://bettercodehub.com/)
 
 ## *Table of contents*
 
@@ -54,6 +56,7 @@
 - [*Acknowledgement*](#acknowledgement)
 - [*Forks*](#forks)
 - [*Issues*](#issues)
+- [*Team Tools*](#team-tools)
 - [*Development Support*](#development-support)
 
 ## *Description*
@@ -136,6 +139,16 @@ See also the list of [contributors][contributors] who participated in this proje
 ## *Issues*
 
 [![issuehunt-to-marktext](https://issuehunt.io/static/embed/issuehunt-button-v1.svg)](https://issuehunt.io/r/AlexRogalskiy/stylegrams)
+
+## *Team Tools*
+
+[![alt tag](http://pylonsproject.org/img/logo-jetbrains.png)](https://www.jetbrains.com/)
+
+***StyleGrams*** Team would like inform that JetBrains is helping by provided IDE to develop the application. Thanks to its support program for an Open Source projects!
+
+[![Edit with Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/AlexRogalskiy/stylegrams)
+
+***StyleGrams*** has experimental support for Gitpod, a pre-configured development environment that runs in your browser. To use Gitpod, click the button below and sign in with GitHub. Gitpod also offers a browser add-on, though it is not required.
 
 ## *Development Support*
 
