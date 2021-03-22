@@ -43,6 +43,7 @@
 [![GitHub Super-Linter](https://github.com/AlexRogalskiy/stylegrams/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 [![Mega-Linter](https://github.com/AlexRogalskiy/stylegrams/workflows/Mega-Linter/badge.svg?branch=master)](https://github.com/AlexRogalskiy/stylegrams/actions?query=workflow%3AMega-Linter+branch%3Amaster)
 [![BCH compliance](https://bettercodehub.com/edge/badge/AlexRogalskiy/stylegrams?branch=master)](https://bettercodehub.com/)
+[![Chat](https://img.shields.io/badge/chat-discussions-success.svg)](https://github.com/AlexRogalskiy/stylegrams/discussions)
 
 ## *Table of contents*
 
