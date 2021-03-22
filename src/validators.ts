@@ -5,6 +5,10 @@ export const getType = (obj: any): string => {
         .toLowerCase()
 }
 
+export const isBlankString = (value: string): boolean => {
+    return !value || /^\s*$/.test(value)
+}
+
 export const isNull = (value: any): boolean => {
     return value === null
 }

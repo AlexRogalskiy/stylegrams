@@ -11,10 +11,6 @@ export const hasProperty = (obj: any, prop: PropertyKey): boolean => {
     return prop in obj || prop in proto || proto[prop] === obj[prop]
 }
 
-export const isBlankString = (value: string): boolean => {
-    return !value || /^\s*$/.test(value)
-}
-
 export const getPropertyByKeys = <T>(obj: T, keys: PropertyKey[]): any => {
     for (const key of keys) {
         obj = obj && obj[key]
