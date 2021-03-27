@@ -38,12 +38,17 @@
 [![Hits-of-Code](https://hitsofcode.com/github/AlexRogalskiy/stylegrams)](https://hitsofcode.com/github/AlexRogalskiy/stylegrams/view)
 [![ComVer](https://img.shields.io/badge/ComVer-compliant-brightgreen.svg)][tags]
 
+[![codecov](https://codecov.io/gh/AlexRogalskiy/stylegrams/branch/master/graph/badge.svg?token=em7lBIqGcQ)](https://codecov.io/gh/AlexRogalskiy/stylegrams)
 [![CI](https://github.com/AlexRogalskiy/stylegrams/workflows/CI/badge.svg)](https://github.com/AlexRogalskiy/stylegrams/actions/workflows/build.yml)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![GitHub Super-Linter](https://github.com/AlexRogalskiy/stylegrams/workflows/Lint%20Code%20Base/badge.svg)](https://github.com/marketplace/actions/super-linter)
 [![Mega-Linter](https://github.com/AlexRogalskiy/stylegrams/workflows/Mega-Linter/badge.svg?branch=master)](https://github.com/AlexRogalskiy/stylegrams/actions?query=workflow%3AMega-Linter+branch%3Amaster)
 [![BCH compliance](https://bettercodehub.com/edge/badge/AlexRogalskiy/stylegrams?branch=master)](https://bettercodehub.com/)
+
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/AlexRogalskiy/stylegrams)
 [![Chat](https://img.shields.io/badge/chat-discussions-success.svg)](https://github.com/AlexRogalskiy/stylegrams/discussions)
+[![Open questions](https://img.shields.io/badge/Open-questions-blue.svg?style=flat-curved)](https://github.com/AlexRogalskiy/stylegrams/labels/question)
+[![Open bugs](https://img.shields.io/badge/Open-bugs-red.svg?style=flat-curved)](https://github.com/AlexRogalskiy/stylegrams/labels/bug)
 
 ## *Table of contents*
 

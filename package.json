@@ -13,10 +13,13 @@
         "start": "npm run build && node dist/index.js",
         "start:dev": "env-cmd --silent -e dev npm run start",
         "start:prod": "env-cmd --silent -e prod npm run start",
-        "lint": "eslint --cache --fix --quiet --format codeframe --ext js,ts .",
+        "lint": "eslint --cache --fix --quiet --cache-location ./node_modules/.cache/ --format codeframe --ext js,ts .",
+        "lint:clean": "del-cli .eslintcache",
         "lint:staged": "lint-staged --no-stash --allow-empty",
         "lint:report": "tsdx lint src tools --report-file report.json",
         "pretty": "pretty-quick --staged --pattern '!test/tests/lint/**'",
+        "license": "license-checker --json > licenses.json",
+        "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
         "ico": "png2icons static/logo.png static/icon -allwe",
         "docs": "typedoc",
         "remark": "remark -q -f .",
@@ -30,7 +33,7 @@
         "prepublishOnly": "npm run check:all && npm run build",
         "postpublish": "npm run clean",
         "postinstall": "husky install",
-        "prebuild": "rimraf dist coverage",
+        "prebuild": "del-cli dist coverage",
         "build": "tsdx build",
         "watch": "tsdx watch",
         "clean": "del-cli --dot=true \"./dist/**/*\"",
@@ -41,10 +44,11 @@
         "test": "env-cmd --silent -e test jest",
         "test:coverage": "env-cmd --silent -e test jest --collectCoverage --detectOpenHandles",
         "test:watch": "env-cmd --silent -e test jest --watch",
-        "lint:all": "npm run lint && npm run lint:md",
+        "test:license": "license-checker --production --summary --unknown",
+        "lint:all": "npm run lint:clean && npm run lint && npm run lint:md",
         "format:all": "npm run format && npm run format:md",
         "check:all": "npm run format:check",
-        "test:all": "npm run test && npm run test:folio",
+        "test:all": "npm run test && npm run test:folio && npm run test:license",
         "all": "npm run format:all && npm run lint:all && npm run pretty && npm run build"
     },
     "dependencies": {
@@ -67,6 +71,7 @@
         "@typescript-eslint/eslint-plugin": "^4.15.0",
         "@typescript-eslint/parser": "^4.15.0",
         "cz-conventional-changelog": "^3.3.0",
+        "conventional-changelog-cli": "^2.0.0",
         "del-cli": "^3.0.1",
         "editorconfig-checker": "3.3.0",
         "eslint": "^7.19.0",
@@ -84,6 +89,7 @@
         "import-fresh": "^3.2.1",
         "jest": "^26.6.3",
         "jest-circus": "^26.6.3",
+        "license-checker": "^25.0.1",
         "lint-staged": "^10.1.6",
         "parse-json": "^5.0.0",
         "path-type": "^4.0.0",
@@ -96,7 +102,6 @@
         "remark-preset-davidtheclark": "^0.12.0",
         "remark-preset-lint-recommended": "^5.0.0",
         "remark-validate-links": "^10.0.2",
-        "rimraf": "^3.0.2",
         "semantic-release": ">=17.2.3",
         "ts-jest": "^26.4.4",
         "ts-node": ">=9.0.0",
@@ -116,9 +121,9 @@
         "node": ">=10"
     },
     "keywords": [
-        "styled graphics",
+        "styled infographics",
         "infographics",
-        "javascript"
+        "typescript"
     ],
     "maintainers": [
         {

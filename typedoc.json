@@ -1,8 +1,11 @@
 {
+    "name": "StyleGrams TypeDoc",
     "entryPoints": ["./src", "./typings"],
-    "externalPattern": ["./data/**/*.json"],
-    "exclude": ["**/*+(.spec|.e2e).ts"],
+    "externalPattern": ["./data"],
+    "exclude": ["**/+(dev-packages|examples|scripts)/**/*", "**/*+(.spec|.e2e).ts"],
     "excludeExternals": true,
+    "hideGenerator": true,
+    "readme": "README.md",
     "highlightTheme": "dark-plus",
     "out": "docs"
 }
