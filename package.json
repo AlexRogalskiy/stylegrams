@@ -107,7 +107,7 @@
         "ts-node": ">=9.0.0",
         "tsdx": "^0.14.1",
         "typedoc": "^0.20.28",
-        "typescript": "^4.1.3",
+        "typescript": "4.4.0-dev.20210514",
         "yaml": "^1.10.0"
     },
     "repository": {
