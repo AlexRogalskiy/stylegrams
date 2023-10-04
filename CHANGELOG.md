@@ -6,13 +6,21 @@
 
 **Closed issues:**
 
+- CVE-2021-23440 \(High\) detected in set-value-2.0.1.tgz - autoclosed [\#421](https://github.com/AlexRogalskiy/stylegrams/issues/421)
+- CVE-2021-44906 \(High\) detected in minimist-1.2.5.tgz - autoclosed [\#343](https://github.com/AlexRogalskiy/stylegrams/issues/343)
+- CVE-2021-44907 \(Low\) detected in qs-6.5.2.tgz, qs-6.5.3.tgz - autoclosed [\#342](https://github.com/AlexRogalskiy/stylegrams/issues/342)
+- CVE-2021-35065 \(High\) detected in glob-parent-5.1.2.tgz - autoclosed [\#304](https://github.com/AlexRogalskiy/stylegrams/issues/304)
+- CVE-2021-3918 \(High\) detected in json-schema-0.2.3.tgz - autoclosed [\#283](https://github.com/AlexRogalskiy/stylegrams/issues/283)
+- CVE-2021-3807 \(High\) detected in ansi-regex-3.0.0.tgz, ansi-regex-5.0.0.tgz - autoclosed [\#247](https://github.com/AlexRogalskiy/stylegrams/issues/247)
+- CVE-2021-23425 \(Medium\) detected in trim-off-newlines-1.0.1.tgz - autoclosed [\#234](https://github.com/AlexRogalskiy/stylegrams/issues/234)
+- CVE-2021-33623 \(High\) detected in trim-newlines-1.0.0.tgz - autoclosed [\#188](https://github.com/AlexRogalskiy/stylegrams/issues/188)
 - CVE-2021-27290 \(High\) detected in ssri-6.0.1.tgz - autoclosed [\#137](https://github.com/AlexRogalskiy/stylegrams/issues/137)
 - CVE-2021-27290 \(High\) detected in ssri-6.0.1.tgz - autoclosed [\#135](https://github.com/AlexRogalskiy/stylegrams/issues/135)
-- CVE-2020-7789 \(Medium\) detected in node-notifier-6.0.0.tgz - autoclosed [\#126](https://github.com/AlexRogalskiy/stylegrams/issues/126)
 - CVE-2012-6708 \(Medium\) detected in jquery-1.8.1.min.js - autoclosed [\#83](https://github.com/AlexRogalskiy/stylegrams/issues/83)
 
 **Merged pull requests:**
 
+- :arrow\_up: Updates Matticusau/pr-helper action to v1.3.3 [\#143](https://github.com/AlexRogalskiy/stylegrams/pull/143) ([renovate[bot]](https://github.com/apps/renovate))
 - :arrow\_up: Pin dependencies [\#23](https://github.com/AlexRogalskiy/stylegrams/pull/23) ([renovate[bot]](https://github.com/apps/renovate))
 
 ## [1.0.1](https://github.com/AlexRogalskiy/stylegrams/tree/1.0.1) (2021-03-17)
