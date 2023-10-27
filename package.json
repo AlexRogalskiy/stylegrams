@@ -91,7 +91,7 @@
         "jest-circus": "26.6.3",
         "license-checker": "25.0.1",
         "lint-staged": "10.5.4",
-        "parse-json": "5.2.0",
+        "parse-json": "7.1.1",
         "path-type": "4.0.0",
         "png2icons": "2.0.1",
         "prettier": "2.3.0",
