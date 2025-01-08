@@ -21,6 +21,7 @@
 **Merged pull requests:**
 
 - :arrow\_up: Updates Matticusau/pr-helper action to v1.3.3 [\#143](https://github.com/AlexRogalskiy/stylegrams/pull/143) ([renovate[bot]](https://github.com/apps/renovate))
+- :arrow\_up: Updates Actions-R-Us/actions-tagger action to v2.0.3 [\#141](https://github.com/AlexRogalskiy/stylegrams/pull/141) ([renovate[bot]](https://github.com/apps/renovate))
 - :arrow\_up: Pin dependencies [\#23](https://github.com/AlexRogalskiy/stylegrams/pull/23) ([renovate[bot]](https://github.com/apps/renovate))
 
 ## [1.0.1](https://github.com/AlexRogalskiy/stylegrams/tree/1.0.1) (2021-03-17)
