@@ -108,7 +108,7 @@
         "tsdx": "0.14.1",
         "typedoc": "0.20.36",
         "typescript": "4.2.4",
-        "yaml": "1.10.2"
+        "yaml": "2.7.0"
     },
     "repository": {
         "type": "git",
