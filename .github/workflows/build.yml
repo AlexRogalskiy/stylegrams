@@ -49,7 +49,7 @@ jobs:
           pnpm run check:all --if-present
 
       - name: Circular dependency check
-        uses: gerrit0/circular-dependency-check@v1
+        uses: gerrit0/circular-dependency-check@v2
         with:
           entry: dist/index.js
 
